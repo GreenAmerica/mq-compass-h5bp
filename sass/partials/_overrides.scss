@@ -16,11 +16,9 @@
 
 	html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-	body { margin: 0; font-size: 1em; @include line-height; }
+	body { margin: 0; font-size: 1em; @include line-height(); }
 
 	body, button, input, select, textarea { font-family: sans-serif; color: $font-color; }
-
-@include h5bp-selection;
 
 // =============================================================================
 // Links
@@ -43,10 +41,6 @@ abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { font-weight: bold; }
 em em { font-style: italic; font-weight: bold; }
-
-blockquote {
-	@include side-line;
-}
 
 dfn { font-style: italic; }
 
@@ -72,7 +66,7 @@ sub, sup { font-size: 8px; font-size: .5rem; line-height: 0; position: relative;
 sup { top: 8px; top: -0.5em; }
 sub { bottom: -4px; bottom: -0.25em; }
 
-#{headings()}, dt { color: $blue; }
+#{headings()}, dt { color: $major-blue; }
 h1 {
 	font-size: 36px;
 	font-size: 2.25rem;
