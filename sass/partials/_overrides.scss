@@ -68,19 +68,19 @@ sub { bottom: -4px; bottom: -0.25em; }
 
 #{headings()}, dt { color: $major-blue; }
 h1 {
-	font-size: 36px;
-	font-size: 2.25rem;
+	@include px-rem(font-size, $base-plus-four);
 }
 h2 {
-	font-size: 27px;
-	font-size: 1.688rem;
+	@include px-rem(font-size, $base-plus-three);
 }
 h3, *[role=complimentary] dt {
-	font-size: 24px;
-	font-size: 1.5rem;
+	@include px-rem(font-size, $base-plus-two);
 }
 
-#{headings(4,6)} { font-size: 18px; font-size: 1.125rem; font-weight: bold; }
+#{headings(4,6)} { 
+	@include px-rem(font-size, $base-plus-one);
+	font-weight: bold;
+}
 
 p, blockquote {
 	font-size: 16px;

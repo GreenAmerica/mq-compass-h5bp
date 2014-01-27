@@ -11,6 +11,12 @@
 		margin-bottom: 160px auto 0px auto;
 		margin-bottom: 10rem auto 0rem auto;
 */
+/*	Set column width and gutter margins
+
+	Use:
+		@include set-column($columns, $column-size, $gutter-size, $screen-width);
+
+*/
 /*--------------------------------------------------
 	Layout 
   --------------------------------------------------
@@ -25,7 +31,6 @@
 	mixins will do the rest.
 
 	Use:
-	
 		@include px-rem(padding, 1, 2, 3, 4);
 		@include px-rem(margin-bottom, 10 auto 0 auto);
 
@@ -244,19 +249,19 @@ h1 {
   font-size: 2.25rem;
 }
 
-/* line 74, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_overrides.scss */
+/* line 73, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_overrides.scss */
 h2 {
-  font-size: 27px;
+  font-size: 27.008px;
   font-size: 1.688rem;
 }
 
-/* line 78, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_overrides.scss */
+/* line 76, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_overrides.scss */
 h3, *[role=complimentary] dt {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 83, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_overrides.scss */
+/* line 80, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_overrides.scss */
 h4, h5, h6 {
   font-size: 18px;
   font-size: 1.125rem;
@@ -427,7 +432,8 @@ body, select, input, textarea {
 /* line 25, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_page.scss */
 body > * {
   margin: 0 auto;
-  width: 20em;
+  width: 80%;
+  min-width: 20em;
 }
 @media screen and (min-width: 48em) {
   /* line 25, /Users/bernardy/Sites/GA/mq-compass-h5bp/sass/partials/_page.scss */

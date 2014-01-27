@@ -24,14 +24,12 @@ body, select, input, textarea {
 
 body > * {
 	margin: 0 auto;
-	width: 20em;	
+	width: 80%;
+	min-width: 20em;
 	
 	@include set-column(12, $small-column, $small-gutter, $small-width);
 	@include set-column(12, $large-column, $large-gutter, $large-width);
 }
-
-
-
 
 // No js at bottom to override everything above
 .no-js {

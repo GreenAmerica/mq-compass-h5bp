@@ -59,3 +59,25 @@ $unit-default-px: 16px;
 		@include px-rem(line-height, $line-height);
 	}
 }
+
+/*	Set column width and gutter margins
+
+	Use:
+		@include set-column($columns, $column-size, $gutter-size, $screen-width);
+
+*/
+
+@mixin set-column($columns: 2, $column-size: $small-column, $gutter-size: $small-gutter, $screen-width: $small-width) {
+	@media screen and (min-width: $screen-width * 1em) {
+		width: (($column-size) * $columns + ($gutter-size * ($columns - 1 ))) * 16px;
+		width: (($column-size) * $columns + ($gutter-size * ($columns - 1 ))) * 1rem;
+	}
+}
+
+@mixin set-gutter($side, $columns: 0, $column-size: $small-column, $gutter-size: $small-gutter, $screen-width: $small-width) {
+
+	@media screen and (min-width: $screen-width * 1em) {
+		margin-#{$side}: ($column-size * $columns) + ($gutter-size * $columns) * 16px;
+		margin-#{$side}: ($column-size * $columns) + ($gutter-size * $columns) * 1rem;
+	}
+}
