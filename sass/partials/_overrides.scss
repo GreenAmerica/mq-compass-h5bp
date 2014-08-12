@@ -19,6 +19,8 @@
 	body { margin: 0; font-size: 1em; @include line-height(); }
 
 	body, button, input, select, textarea { font-family: sans-serif; color: $font-color; }
+	
+	img, video, audio, iframe, object { width: 100%; }
 
 // =============================================================================
 // Links
